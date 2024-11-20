@@ -16,7 +16,7 @@ def main():
     return {"message": "Hello, World!"}
 
 
-@app.post("/predict")
+@app.post("/testPost")
 def predict(data: Data):
     data_dict = data.model_dump()
     test.append(data_dict)
